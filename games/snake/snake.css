@@ -1,0 +1,17 @@
+
+
+.snakeGame {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#snakeBoard {
+    border: solid rgb(150, 145, 145) 5px;
+    width: 25%;
+}
+
+#gameOverMenu {
+    color: rgb(254, 254, 254);
+    font-weight: bolder;
+    font-size: 30px;
+}

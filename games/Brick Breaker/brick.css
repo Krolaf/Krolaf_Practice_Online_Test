@@ -1,0 +1,12 @@
+.break {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#board {
+    border-top: solid blueviolet;
+    border-right: solid blueviolet;
+    border-left: solid blueviolet;
+    background-color: black;
+    width: 25%;
+}
