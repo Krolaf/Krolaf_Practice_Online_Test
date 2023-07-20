@@ -14,29 +14,56 @@
 </head>
 <body>
     <header id="header">
-
+ 
         <nav class="navBar">
                 <a href="#header"><img src="../../image/logo.png" class="logo" alt="logo de Krolaf, un geant avec une longue barbe blanche"></a>
                      
-            <div class="navLink">
+            <div class="navLink"> 
                 <ul>
                     <li> <h1>KROLAF'S PRACTICES</h1></li>
-                    <li><a id="Acceuil" href="../../index.html">Acceuil</a></li>
+                    <li><a id="Accueil" href="../index.html">Accueil</a></li>
                     <li>
-                        <a id="Games" class="Games" href="../games.html">Games</a>
+                        <a id="Games" class="Games" href="../games/games.html">Games</a>
                         <ul class="dropDown">
-                            <li><a href="../games.html">Tout les jeux</a></li>
-                            <li><a href="../snake/snake.html">Snake</a></li>
-                            <li><a href="../candy crush/candy.html">Candy Crush</a></li>
+                            <li><a href="../games/games.html">Tout les jeux</a></li>
+                            <li><a href="../../games/snake/snake.html">Snake</a></li>
+                            <li><a href="../../games/candy crush/candy.html">Candy Crush</a></li>
                         </ul>
                     </li>
-                    <li><a href="../../maquette/maquettes.html">Maquettes</a></li>
-                    <li><a href="../../sites/sites.html">Sites</a></li>
-                    <li><a href="../../contact/contact.html">Contact</a></li>
-                </ul> 
+                    <li><a href="../maquette/maquettes.html">Maquettes</a></li>
+                    <li><a href="../sites/sites.html">Sites</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
+                </ul>
             </div>    
                 
-        </nav> 
+        </nav>
+        <nav class="navMobile">
+            <div class="navLink"> 
+                <ul>
+                    <li class="menuMobile">Menu</li>
+                    <li><a href="../../contact/contact.html">Contact</a></li>
+                    <img src="../../image/logo.png" class="logo" alt="logo de Krolaf, un geant avec une longue barbe blanche">
+                </ul>
+            </div>
+            <div class="menu"> 
+                <ul> 
+                    <li><a id="Accueil" href="../../index.html">Accueil</a></li>
+                    <li><a id="Games" class="Games" href="../games.html">Games</a></li>
+                    <li><a href="../../maquette/maquettes.html">Maquettes</a></li>
+                    <li><a href="../../sites/sites.html">Sites</a></li>
+                </ul>
+            </div>        
+        </nav>
+        
+        <script>
+        const menuMobile = document.querySelector(".menuMobile")
+        const menu = document.querySelector(".menu")
+
+        menuMobile.addEventListener('click',()=>{
+        menu.classList.toggle('mobileMenu')
+        })
+        </script>
+
     </header>
     
     <!-- le Jeu du Brick Breacker -->

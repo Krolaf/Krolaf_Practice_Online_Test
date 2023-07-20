@@ -5,27 +5,29 @@
     text-decoration: none;
 } 
 
-body {
+html {
     color: white;
     margin: 0;
     padding: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-image: linear-gradient(to top right, #350c0c, #1c1b1bea);
   }
    
 header{
     display: flex;
-    height: 250px;
+    height: 14vh;
+    width: 100%;
 }
 
 .navBar {
     position: absolute;
-    padding: 20px;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     box-sizing: border-box;
     background-color:#020C0F;
     z-index: 2;
@@ -39,21 +41,22 @@ header{
 .navBar .logo {
     height: 100%;
     width: 100%;
-    max-width: 180px;
-    max-height: 150px;
+    max-width: 120px;
+    max-height: 120px;
 
-    font-size: 3em ;
+    font-size: 2.5em ;
     font-weight: bolder;   
 }
 
 .navBar .navLink ul {
     display: flex;
-    font-size: 2.5vw ;
+    font-size: 2.3vw ;
     font-weight: bolder;
 }
 
-.navBar .navLink ul li{
-    margin: 0 20px;
+/* espacement des lien de la navBar */
+.navLink ul li{ 
+    margin: 0 2vw;
 }
 
 .navBar .navLink ul li.active a {
@@ -69,22 +72,21 @@ header{
 .dropDown li a:hover {
     display: block;
     background: #020C0F;
-    padding-left: 10px;
-    padding-right: 10px;
     border-radius: 15px;
 }
 
 .dropDown li {
     display: none;
     flex-direction: column;
-    font-size: 26px;
-    padding: 10px;
+    font-size: 1.2vw;
+    padding: 0.4vw;
+    text-align: center;
 }
 
 .dropDown {
-    width: 300px;
+    width: 15vw;
     position: absolute;
-    margin: -5px;
+    margin: -0.5vh;
     background: slategray;
     border-radius: 15px;
 }
@@ -97,7 +99,18 @@ ul li:hover ul.dropDown {
     display: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 920px) {
+
+    html {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(to top ,bottom, #350c0c, #1c1b1bea);
+        
+      }
+
+    .navLink ul li{ 
+        margin: 0 ;
+    }
 
     .navBar {
         display: none;
@@ -105,16 +118,16 @@ ul li:hover ul.dropDown {
 
     .navMobile {
         display: block;
-        align-items: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
         height: fit-content;
+        width: 100vw;
         background-color: #020C0F;
     }
 
     .navMobile .logo {
-        height: 70px;
-        width: 70px;
+        height: 10vw;
+        width: 10vw;
         max-width: 180px;
         max-height: 150px;
     }
@@ -126,6 +139,7 @@ ul li:hover ul.dropDown {
         width: 100vw;
         color: #a22a21;
         text-decoration: none;
+        font-size: 5vw;
     }
 
     .navMobile a {
@@ -136,7 +150,7 @@ ul li:hover ul.dropDown {
         top: 0;
         left: 0;
         position: absolute;
-        width: 120px;
+        width: 30vw;
         height: 100%;
         display: flex;
         justify-content: center;    
@@ -148,7 +162,7 @@ ul li:hover ul.dropDown {
 
     .menu a {
         font-weight: bold;
-        font-size: 6vw;
+        font-size: 4vw;
     }
 
     .menu.mobileMenu {
@@ -160,5 +174,18 @@ ul li:hover ul.dropDown {
         display: flex;
         flex-direction: column;
     }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    html {
+        width: 100vw;
+        height: fit-content;
+        background-image: linear-gradient(to bottom, #350c0c, #1c1b1bea);
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+      }
 
 }

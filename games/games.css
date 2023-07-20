@@ -1,27 +1,39 @@
 
 .touteCategorie {
     display: flex;
+    padding-top: 10vh;
+    justify-content: space-around;
+    height: 100%;
+    width: 100vw;
+}
+
+.categorieMobile1 {
+    display: flex;
+}
+
+.categorieMobile2 {
+    display: flex;
+
 }
 
 .categorie {
-    margin-left: 20px;
-    padding-top: 10px;
-    padding-right: 20px;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     background-color: rgba(83, 56, 56, 0.844);
-    width: 12vw;
-    min-width: 120px;
+    width: 18vw;
     color: white;
-    font-size: 1.2vw;
     font-size: min(0.8em);
+    padding-right: 2vw;
+    border: solid 4px black;
+    margin-right: 1vw ;
+    margin-left: 1vw;
 }
 
 .screen {
     min-width: 80px;
-    width: 8vw;
-    height: 14vh;
-    min-width: 100px;
+    width: 12vw;
+    height: 12vw;
     -webkit-box-shadow:
     5px 5px 0px 0px #500c0c,
      10px 10px 0px 0px #500c0c,
@@ -37,30 +49,124 @@
         25px 25px 0px 0px #975b5b9c,
          6px 6px 14px 18px rgba(0,0,0,0);
     
-    margin-bottom: 30px; 
 }
 
-h2 {
+h2 /*titre de categorie*/ {
+    font-size: 2.2vw;
+    margin-top: 0.5vh;
+}
+
+h3 /*nom de jeu*/ {
     font-size: 1.8vw;
+    margin-top: 2.8vh;
+    margin-bottom:0.5vw ;
 }
 
-h3 {
-    font-size: 1.4vw;
+.titre /*h2 + h3*/ {
+    margin-left: 2vw;
+
 }
 
-.titre {
-    padding-left: 20px;
-    margin-bottom: 10px;
-}
-
-a {
+a /*liens des h3*/ {
     color: black;
     font-weight: 900;
     margin: 10px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 920px) {
+
+    .touteCategorie {
+        display: flex;
+        padding-top: 10vh;
+        flex-direction: column;
+    }
+    
+    .categorieMobile1 {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 2vh;
+    }
+
+    .categorieMobile2 {
+        display: flex;
+        justify-content: space-around;
+    }
 
 
+    .categorie {      
+        width: 25vw;
+        font-size: 1.2vw;
+        font-size: min(0.8em);
+        padding-right: 4.4vw;
+    }
+    
+    .screen {
+        width: 18vw;
+        height: 18vw;
+        
+    }
+    
+    h2 /*titre de categorie*/{
+        font-size: 3.8vw;
+    }
+    
+    h3 /*nom de jeu*/{
+        font-size: 3.2vw;
+    }
+    
+    a {
+        margin: 0;
+    }
 
+    .titre {
+        margin-left: 4.4vw;
+    }
 }
+
+@media screen and (max-width: 500px) {
+
+    .touteCategorie {
+
+        align-items: center;
+        padding: 0;
+
+    }
+
+    .categorieMobile1 {
+
+        flex-direction: column;
+
+    }
+
+    .categorieMobile2 {
+
+        flex-direction: column;
+
+    }
+
+    .categorie {
+        margin-bottom: 3.5vw;
+        width: 55vw;
+        font-size: min(0.8em);
+        padding-right: 7vw;
+    }
+
+    .screen {
+        width: 25vw;
+        height: 25vw;
+        
+    }
+    
+    h2 /*titre de categorie*/{
+        font-size: 8vw;
+    }
+    
+    h3 /*nom de jeu*/{
+        font-size: 6vw;
+    }
+
+    .titre {  
+    margin-left: 7vw;
+    }
+}
+

@@ -5,6 +5,11 @@
     padding: 0;
   }
 
+  html {
+    height: 100%;
+}
+
+
 .reseauLogo {
     height: 1em;
     width: 1em;

@@ -1,6 +1,6 @@
 
 //snakeBoard
-var blockSize = 25;
+var blockSize = 35;
 var rows = 20;
 var cols = 20;
 var snakeBoard;

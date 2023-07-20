@@ -1,4 +1,6 @@
-
+html {
+    height: 100%;
+}
 
 .snakeGame {
     text-align: center;

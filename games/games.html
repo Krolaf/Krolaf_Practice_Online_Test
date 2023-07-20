@@ -20,7 +20,7 @@
             <div class="navLink"> 
                 <ul>
                     <li> <h1>KROLAF'S PRACTICES</h1></li>
-                    <li><a id="Acceuil" href="../index.html">Acceuil</a></li>
+                    <li><a id="Accueil" href="../index.html">Accueil</a></li>
                     <li>
                         <a id="Games" class="Games" href="../games/games.html">Games</a>
                         <ul class="dropDown">
@@ -47,52 +47,81 @@
             </div>
             <div class="menu"> 
                 <ul> 
-                    <li><a id="Acceuil" href="../index.html">Acceuil</a></li>
+                    <li><a id="Accueil" href="../index.html">Accueil</a></li>
                     <li><a id="Games" class="Games" href="../games/games.html">Games</a></li>
                     <li><a href="../maquette/maquettes.html">Maquettes</a></li>
                     <li><a href="../sites/sites.html">Sites</a></li>
                 </ul>
             </div>        
         </nav>
-    </header>
-    
-    <script>
+        
+        <script>
         const menuMobile = document.querySelector(".menuMobile")
         const menu = document.querySelector(".menu")
 
-     menuMobile.addEventListener('click',()=>{
+        menuMobile.addEventListener('click',()=>{
         menu.classList.toggle('mobileMenu')
         })
-    </script>
+        </script>
+
+    </header>
             
     <main class="touteCategorie">
+
+    <div class="categorieMobile1">           
+        <section class="categorie" > 
                 
-    <section class="categorie" > 
-                
-                <h2 class="titre">RETRO</h2>
+            <h2 class="titre">RETRO</h2>
+
         <article class="snake">
             <img class="screen" src="../image/Snake.png" alt="screenshot du jeu de snake">
             <a href="snake/snake.html"><h3 class="titre">The Snake</h3></a>
-            
         </article>
-                <br>
+
         <article class="brique">
             <img class="screen" src="../image/Brique Breaker.png" alt="screenshot du jeu de brique breaker">
             <a href="Brick Breaker/brick.html"><h3 class="titre">Brique Breaker</h3></a>
             
         </article>
 
-    </section>
-
-    <section class="categorie"> 
+        </section>
+        <section class="categorie"> 
                 
             <h2 class="titre">MOBILE</h2>
         <article class="candy">
-        <!-- <img class="screen" src="" alt="screenshot du jeu candy crush"> -->
-        <a href=""><h3 class="titre">Candy Crush</h3></a>
+            <!-- <img class="screen" src="" alt="screenshot du jeu candy crush"> -->
+            <a href="candy crush/candy.html"><h3 class="titre">Candy Crush</h3></a>
         </article>
 
-    </section>
+        </section>
+    </div> 
+
+    <div class="categorieMobile2">           
+        <section class="categorie" > 
+                
+            <h2 class="titre">3D</h2>
+
+        <article class="snake">
+            <!-- <img class="screen" src="" alt="jeu a venir"> -->
+            <a href="#"><h3 class="titre">jeu a venir</h3></a>
+        </article>
+
+        <article class="brique">
+            <!-- <img class="screen" src="" alt="jeu a venir"> -->
+            <a href="#"><h3 class="titre">jeu a venir</h3></a>
+        </article>
+
+        </section>
+        <section class="categorie"> 
+                
+            <h2 class="titre">a venir</h2>
+        <article class="candy">
+            <!-- <img class="screen" src="" alt="screenshot du jeu candy crush"> -->
+            <a href=""><h3 class="titre">jeu a venir</h3></a>
+        </article>
+
+        </section>
+    </div> 
 
     </main>
     
