@@ -36,6 +36,7 @@ header{
 
 .navBar a {
     color: #83150e;
+    margin: 0;
 }
 
 .navBar .logo {
