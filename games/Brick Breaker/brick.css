@@ -25,22 +25,22 @@ html {
 }
 
 #rightButton {
-    font-size: 3vw;
-    margin: 2vw;
+    font-size: 5vw;
     background-color: black;
     border-radius: 20px;
     padding: 0.4vw;
-    width: 12vw;
+    width: 25vw;
     text-align: center;
+    user-select: none;
 }
 #leftButton {
-    font-size: 3vw;
-    margin: 2vw;
+    font-size: 5vw;
     background-color: black;
     border-radius: 20px;
     padding: 0.4vw;
-    width: 12vw;
+    width: 25vw;
     text-align: center;
+    user-select: none;
 }
 
 @media screen and (max-width: 920px) {
@@ -52,6 +52,7 @@ html {
     .controler{
         display: block;
         display: flex;
+        justify-content: space-evenly;
     }
 
 }
@@ -61,5 +62,6 @@ html {
     #board {
         width:60%;
     }
+    
 
 }
