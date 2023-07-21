@@ -4,16 +4,32 @@ html {
 
 .snakeGame {
     text-align: center;
-    padding-top: 10px;
+    padding-top: 2vh;
 }
 
 #snakeBoard {
     border: solid rgb(150, 145, 145) 5px;
-    width: 25%;
+    width: 30%;
 }
 
 #gameOverMenu {
     color: rgb(254, 254, 254);
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 4vw;
+}
+
+@media screen and (max-width: 920px) {
+
+    #snakeBoard {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    #snakeBoard {
+        width: 60%;
+    }
+
 }

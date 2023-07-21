@@ -73,6 +73,74 @@
         <canvas id="board"></canvas>
         <div id="gameOverMenu"></div>
 
+    </section > 
+
+    <section class="controler">
+        
+        <div id="leftButton">To left</div> 
+        
+        <div id="rightButton">To Right</div>     
+        
     </section>
+    
+    <script>
+        let buttonLeft = document.getElementById("leftButton");
+        let buttonRight = document.getElementById("rightButton");
+        let intervalLeft; // Variable pour stocker l'intervalle de déplacement répété vers la gauche
+        let intervalRight; // Variable pour stocker l'intervalle de déplacement répété vers la droite
+
+        buttonLeft.addEventListener('mousedown', function () {
+            // Appeler la fonction movePlayerLeft() dès que le bouton est enfoncé
+            movePlayerLeft();
+            // Appeler la fonction movePlayerLeft() répétitivement toutes les 100 millisecondes (ajustez si nécessaire)
+            intervalLeft = setInterval(movePlayerLeft, 100);
+        });
+
+        buttonLeft.addEventListener('mouseup', function () {
+            // Lorsque le bouton est relâché, effacer l'intervalle pour arrêter le déplacement répété du joueur
+            clearInterval(intervalLeft);
+        });
+
+        buttonLeft.addEventListener('mouseleave', function () {
+            // Lorsque le curseur quitte la zone du bouton, effacer l'intervalle pour arrêter le déplacement répété du joueur
+            clearInterval(intervalLeft);
+        });
+
+        buttonRight.addEventListener('mousedown', function () {
+            // Appeler la fonction movePlayerRight() dès que le bouton est enfoncé
+            movePlayerRight();
+            // Appeler la fonction movePlayerRight() répétitivement toutes les 100 millisecondes (ajustez si nécessaire)
+            intervalRight = setInterval(movePlayerRight, 100);
+        });
+
+        buttonRight.addEventListener('mouseup', function () {
+            // Lorsque le bouton est relâché, effacer l'intervalle pour arrêter le déplacement répété du joueur
+            clearInterval(intervalRight);
+        });
+
+        buttonRight.addEventListener('mouseleave', function () {
+            // Lorsque le curseur quitte la zone du bouton, effacer l'intervalle pour arrêter le déplacement répété du joueur
+            clearInterval(intervalRight);
+        });
+
+        function movePlayerLeft() {
+        // Calcul de la prochaine position horizontale du joueur vers la gauche
+        let nextPlayerX = player.x - player.velocityX;
+        // Vérification si le déplacement vers la gauche ne fait pas sortir le joueur du plateau
+        if (!outOfBounds(nextPlayerX)) {
+            player.x = nextPlayerX; // Met à jour la position horizontale du joueur
+        }
+    }
+
+    function movePlayerRight() {
+        // Calcul de la prochaine position horizontale du joueur vers la droite
+        let nextPlayerX = player.x + player.velocityX;
+        // Vérification si le déplacement vers la droite ne fait pas sortir le joueur du plateau
+        if (!outOfBounds(nextPlayerX)) {
+            player.x = nextPlayerX; // Met à jour la position horizontale du joueur
+        }
+    }
+    </script>
+
 </body>
 </html>

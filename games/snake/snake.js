@@ -86,7 +86,7 @@ function update() {
 }
 
 function changeDirection(e) {
-    
+
     if (gameOver && e.code === "Enter") {
         // Réinitialise les variables du jeu
         snakeX = blockSize * 5;
@@ -119,9 +119,8 @@ function changeDirection(e) {
         velocityX = 1;
         velocityY = 0;
     }
+    
 }
-
-
 
 function placeFood() {
     //(0-1) * cols -> (0-19.9999) -> (0-19) * 25

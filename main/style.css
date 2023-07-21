@@ -32,6 +32,7 @@ header{
     background-color:#020C0F;
     z-index: 2;
     position: fixed;
+    height: 14vh;
 }
 
 .navBar a {
