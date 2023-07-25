@@ -1,0 +1,70 @@
+html {
+    height: 100%;
+}  
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.chat-box {
+    width: 30vw;
+    background-color: rgb(139, 98, 46);
+    text-align: center; /* Aligner tout le texte au centre */
+    bottom: 0; 
+    position: fixed;
+    max-height: 30vh;
+    border-radius: 200px 200px 0 0;
+  }
+  
+  .chat {
+    margin: 3vw;
+    text-align: center; /* Aligner le texte au centre dans la classe .chat */
+  }
+  
+  .chat-box h2 {
+    font-size: 2vw;
+    margin-top: 1vh;
+    text-align: center; /* Aligner le texte au centre dans la classe .chat-box h2 */
+  }
+  
+  .chat-header {
+    display: flex;
+    justify-content: center;
+    text-align: center; /* Aligner le texte au centre dans la classe .chat-header */
+  }
+  
+  .chat-messages {
+    font-size: 1.2vw;
+    height: calc(20vh - 3vw - 3.2vw); /* Hauteur pour les messages du chat avec marge supérieure et inférieure */
+    max-height: 100%; /* Limite de la hauteur du chat */
+    overflow-y: auto; /* Ajoute une barre de défilement interne si nécessaire */
+    /* Permettre aux mots longs de passer à la ligne */
+    overflow-x: hidden;
+    word-wrap: break-word;
+    padding-right: 0.6vw;
+    padding-left: 0.6vw;
+  }
+  
+  .chat-input {
+    display: flex;
+    justify-content: center;
+    position: fixed; /* Bloquer le chat input à sa position */
+    bottom: 0; /* Aligner le chat input en bas de la fenêtre */
+    width: 100%; /* Assurer que le chat input occupe toute la largeur de la fenêtre */
+    left: 0; /* Aligner le chat input à gauche de la fenêtre */
+    padding-bottom: 1vh;
+    text-align: center; /* Aligner le texte au centre dans la classe .chat-input */
+  }
+  
+  input[type="text"] {
+    background-color: #a22a21;
+    font-size: 1.2vw;
+    text-align: center; /* Aligner le texte au centre dans les input[type="text"] */
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  

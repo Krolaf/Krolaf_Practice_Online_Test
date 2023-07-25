@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../main/style.css">
-    <link rel="stylesheet" href="maquettes.css">
+    <link rel="stylesheet" type="text/css" href="Forum.css">
 
-    <title>Krolaf's snake</title>
+    <title>Krolaf Forums</title>
+    
 
 </head>
 <body>
@@ -54,18 +55,40 @@
                 </ul>
             </div>        
         </nav>
-    </header>
-    
-    <script>
-        const menuMobile = document.querySelector(".menuMobile")
-        const menu = document.querySelector(".menu")
 
-     menuMobile.addEventListener('click',()=>{
+<script>
+    const menuMobile = document.querySelector(".menuMobile")
+    const menu = document.querySelector(".menu")
+
+    menuMobile.addEventListener('click', () => {
         menu.classList.toggle('mobileMenu')
-        })
-    </script>
+    })
+</script>
 
+    </header>
+
+
+
+    <!-- une chat-box instantanée -->
+    <footer>
+    <div class="chat-box">
+        <h2 onclick="toggleDropChat(event)">Chat Instantané</h2>
+        <div class="chat">
+            <div class="chat-header">
     
+                <input type="text" id="username" placeholder="Votre pseudo">
+                <button onclick="startChat()">Commencer</button>
+            </div>
+            <div class="chat-messages" id="chatMessages"></div>
+            <div class="chat-input">
+                <input type="text" id="message" placeholder="Entrez votre message">
+                <button onclick="sendMessage()">Envoyer</button>
+            </div>
+        </div>
+    </div>
+    </footer>
+    
+    <script src="Forum.js"></script>
 
 </body>
 </html>
